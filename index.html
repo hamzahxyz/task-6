@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: hsl(0, 0%, 20%);
+    }
+    
+    .title {
+        font-size: small;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        
+    }
+    
+    header {
+        text-align: center;
+        padding: 2em 1em;
+        background-color: #cce5ea;
+    }
+    
+    header h1 {
+        font-size: 2em;
+        margin: 0;
+        color: #040505;
+    }
+    
+    header p {
+        font-size: 1.2em;
+        margin: 0.5em 0 1.5em;
+        color: #666;
+    }
+    
+    .search-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    
+    .search-container input {
+        padding: 0.5em;
+        font-size: 1em;
+        width: 50%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        padding: 1em 0;
+    }
+    
+    .category {
+        border: none;
+        background-color: #fff;
+        padding: 0.5em 1em;
+        margin: 0 0.5em;
+        font-size: 1em;
+        cursor: pointer;
+        color: #4CAF50;
+    }
+    
+    .category.active {
+        border-bottom: 2px solid #4CAF50;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2em 1em;
+    }
+    
+    .post {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin: 1em;
+        overflow: hidden;
+        width: 300px;
+    }
+    
+    .post img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .post-info {
+        padding: 1em;
+    }
+    
+    .post .category {
+        font-size: 0.9em;
+        color: #4CAF50;
+        margin-bottom: 0.5em;
+    }
+    
+    .post .author {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 0.5em;
+    }
+    
+    .post h2 {
+        font-size: 1.2em;
+        margin: 0.5em 0;
+        color: #333;
+    }
+    
+    .post .description {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 1em;
+    }
+    
+    .post .read-more {
+        font-size: 0.9em;
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 2em 0;
+        background-color: #1d1616;
+    }
+    
+    footer .view-more {
+        padding: 0.5em 1em;
+        font-size: 1em;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            BLOG
+        </div>
+        <h1>Our mission is to make knowledge and news accessible for everyone.</h1>
+        <p>With our integrated CRM, project management, collaboration and invoicing capabilities, you can manage your business in one secure platform.</p>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+    <nav>
+        <button class="category active">All Categories</button>
+        <button class="category">Technology</button>
+        <button class="category">Development</button>
+        <button class="category">Marketing</button>
+        <button class="category">Start-up</button>
+    </nav>
+    <main>
+        <div class="post" id="technology">
+            <img src="https://media.suara.com/pictures/970x544/2019/07/17/20725-teknologi-digital.jpg" alt="Technology Image">
+            <div class="post-info">
+                <p class="category">TECHNOLOGY</p>
+                <p class="author">John Doe • 19 Jan 2022</p>
+                <h2>A small business is only as good as its tools and it is totally true.</h2>
+                <p class="description">We've all experienced the chaos of multiple spreadsheets, tracking and insight tools, and scrambling for the right data at the right time.</p>
+                <a href="form.html" class="read-more">Read Post</a>
+            </div>
+        </div>
+        <div class="post" id="development">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Borobudur_Temple.jpg/320px-Borobudur_Temple.jpg" alt="Development Image">
+            <div class="post-info">
+                <p class="category">DEVELOPMENT</p>
+                <p class="author">John Doe • 19 Jan 2022</p>
+                <h2>A small business is only as good as its tools and it is totally true.</h2>
+                <p class="description">We've all experienced the chaos of multiple spreadsheets, tracking and insight tools, and scrambling for the right data at the right time.</p>
+                <a href="form.html" class="read-more">Read Post</a>
+            </div>
+        </div>
+        <div class="post" id="marketing">
+            <img src="https://th.bing.com/th/id/OIP.AX0wlEXOpbdAB5m3ttTKAAHaE8?rs=1&pid=ImgDetMain" alt="Marketing Image">
+            <div class="post-info">
+                <p class="category">MARKETING</p>
+                <p class="author">hamzah • 19 Jan 2024</p>
+                <h2>A small business is only as good as its tools and it is totally true.</h2>
+                <p class="description">We've all experienced the chaos of multiple spreadsheets, tracking and insight tools, and scrambling for the right data at the right time.</p>
+                <a href="form.html" class="read-more">Read Post</a>
+            </div>
+        </div>
+        <div class="post" id="startup">
+            <img src="https://th.bing.com/th/id/OIP.oYyZh3HgyrZMVRrgnYdJWAHaE8?rs=1&pid=ImgDetMain" alt="Start-up Image">
+            <div class="post-info">
+                <p class="category">START-UP</p>
+                <p class="author">hamzah • 20 mei 2024</p>
+                <h2>A small business is only as good as its tools and it is totally true.</h2>
+                <p class="description">We've all experienced the chaos of multiple spreadsheets, tracking and insight tools, and scrambling for the right data at the right time.</p>
+                <a href="form.html" class="read-more">Read Post</a>
+            </div>
+        </div>
+        <div class="post" id="marketing">
+            <img src="https://th.bing.com/th/id/OIP.CQSMCU8aeCVSlP6IDX-ROwHaE8?rs=1&pid=ImgDetMain" alt="Marketing Image">
+            <div class="post-info">
+                <p class="category">MARKETING</p>
+                <p class="author">hamzah • 19 Jan 2024</p>
+                <h2>A small business is only as good as its tools and it is totally true.</h2>
+                <p class="description">We've all experienced the chaos of multiple spreadsheets, tracking and insight tools, and scrambling for the right data at the right time.</p>
+                <a href="form.html" class="read-more">Read Post</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="form.html"><button class="view-more">view more</button></a>
+    </footer>
+</body>
+</html>
